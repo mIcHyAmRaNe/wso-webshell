@@ -1,7 +1,7 @@
 
 # WSO php webshell
 
-- [x] **New Design**
+- [x] **New Design: most Beautiful**
 - [x] **php 7.x issue resolved**
 - [x] **Easy to use**
 - [x] **Password login protection**
@@ -15,12 +15,6 @@
  
  ______________
  
- ### Screenshots
- 
-<img src="https://anonimag.es/i/wso-loginbe87c.png"/>
-<img src="https://anonimag.es/i/wso-principal42e48.png"/>
-<img src="https://anonimag.es/i/wso-logout748f7.png"/>
- ______________
 
 ### LEGAL DISCLAMER
 
