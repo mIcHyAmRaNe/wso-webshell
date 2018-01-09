@@ -18,7 +18,7 @@
 
 ### SCREENSHOT
 
-<img src="https://anonimag.es/i/5c57b773e8960a674d700744f6aa411f.png" width="90%"></img> <img src="https://anonimag.es/i/wso-principal42e48.png" width="90%"></img> <img src="https://anonimag.es/i/4780d6baa7c00b87c266c779041d9cdd.png" width="90%"></img> 
+<img src="/screenshots/wso-welcome.gif" width="90%"></img> <img src="/screenshots/wso-main.png" width="90%"></img> <img src="/screenshots/wso-bye.gif" width="90%"></img> 
  ______________
  
 
