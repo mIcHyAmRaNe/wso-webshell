@@ -18,7 +18,7 @@
 
 ### SCREENSHOT
 
-<img src="/screenshots/wso-welcome.gif" width="90%"></img> <img src="/screenshots/wso-main.png" width="90%"></img> <img src="/screenshots/wso-bye.gif" width="90%"></img> 
+<img src="/screenshots/wso-welcome.gif" width="90%"></img> <img src="/screenshots/wso-main.png" width="90%"></img><img src="/screenshots/wso-network.png" width="90%"> <img src="/screenshots/wso-bye.gif" width="90%"></img> 
  ______________
  
 
