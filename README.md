@@ -11,8 +11,11 @@
 
  ______________
 
- __Password: ghost287__
- 
+|               | Default                | Personal?                       |
+| ------------- |:----------------------:| -------------------------------:|
+| Password      | __ghost287__           | Edit __line 7__ (__md5 hash__)  |
+| Email         | __test@testmail.com__  | Edit __line 4__                 |
+
  ______________
  
 
