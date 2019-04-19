@@ -7,6 +7,7 @@
 - [x] **Password login protection**
 - [x] **Server Infection possibility**
 - [x] **Managing SQL Databases**
+- [x] **No Tracker**
 - [x] **More useful features...**
 
  ______________
